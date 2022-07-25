@@ -1,5 +1,7 @@
 package kodlamaioDbWorkshop;
 
+import java.time.LocalDate;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -13,6 +15,8 @@ public class Main {
 		System.out.println(((IndividualCustomer) customer).getFirstName()+" "+((IndividualCustomer) customer).getLastName());
 
 		
+		CommercialActivity commercialActivity = new CommercialActivity(1,LocalDate.parse("2022-07-26"),(IndividualCustomer) customer);
+		System.out.println(commercialActivity.getIndividualCustomer().getNationalIdentity());
 
 }
 }
