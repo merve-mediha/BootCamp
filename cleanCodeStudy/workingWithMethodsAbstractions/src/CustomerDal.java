@@ -1,6 +1,6 @@
 
 
 public interface CustomerDal {
-	void add(Customer customer);
-	boolean customerExists(Customer customer);
+	public void add(Customer customer);
+	public boolean customerExists(Customer customer);
 }
